@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         await user.updateProfile({displayName: name});
         await user.sendEmailVerification({
-          url: 'https://PEmanuelLuduena.github.io/PaginaPrueba/terminar-registro.html'
+          url: 'https://pemanuelluduena.github.io/PaginaPrueba/terminar-registro.html'
         });
 
         messageDiv.textContent = 'Registrado. Revisa tu correo para verificar.';
