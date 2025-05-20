@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Confirmar Registro</title>
-<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
-<script src="firebase-config.js"></script>
-<script src="scripts.js"></script>
-<style>
-  #register-message,
-  #login-message,
-  #verify-message {
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 1.1em;
-  }
-
-  .success {
-    color: green;
-  }
-
-  .error {
-    color: red;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Verificar correo - Registro</title>
+  <style>
+    #verify-message {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .success {
+      color: green;
+    }
+    .error {
+      color: red;
+    }
+  </style>
 </head>
 <body>
-<h2>Confirmar Registro</h2>
-<p>Verificando correo...</p>
-<div id="verify-message"></div>
+  <h1>Verificación de correo</h1>
+  <div id="verify-message">Verificando...</div>
+
+  <!-- Firebase y scripts -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="verificar.js"></script>
 </body>
 </html>
